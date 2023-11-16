@@ -25,6 +25,8 @@ for (let i = 0; i < 3; i += 1) {
       question = `${firstNum} * ${secondNum}`;
       answer = String(firstNum * secondNum);
       break;
+    default:
+      break;
   }
 
   questionsAndAnswers.push([question, answer]);

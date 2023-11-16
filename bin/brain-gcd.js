@@ -6,12 +6,14 @@ const description = 'Find the greatest common divisor of given numbers.';
 const questionsAndAnswers = [];
 
 const findCdg = (num1, num2) => {
-  while (num2) {
-    const temp = num2;
-    num2 = num1 % num2;
-    num1 = temp;
+  let a = num1;
+  let b = num2;
+  while (b) {
+    const temp = b;
+    b = a % b;
+    a = temp;
   }
-  return num1;
+  return a;
 };
 
 for (let i = 0; i < 3; i += 1) {
