@@ -1,13 +1,13 @@
 #!/usr/bin/env node
 
-import runGame from "../src/index.js";
+import runGame from '../src/index.js';
 
-const description = "Find the greatest common divisor of given numbers.";
+const description = 'Find the greatest common divisor of given numbers.';
 const questionsAndAnswers = [];
 
 const findCdg = (num1, num2) => {
   while (num2) {
-    let temp = num2;
+    const temp = num2;
     num2 = num1 % num2;
     num1 = temp;
   }
