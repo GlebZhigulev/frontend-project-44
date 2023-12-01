@@ -29,4 +29,4 @@ const brainGcd = () => {
   runGame(description, questionsAndAnswers);
 };
 
-export default { brainGcd };
+export default brainGcd;

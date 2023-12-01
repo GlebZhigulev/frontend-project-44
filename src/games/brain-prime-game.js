@@ -27,4 +27,4 @@ const brainPrime = () => {
   runGame(description, questionsAndAnswers);
 };
 
-export default { brainPrime };
+export default brainPrime;

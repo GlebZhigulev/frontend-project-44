@@ -24,4 +24,4 @@ const brainProgression = () => {
   runGame(description, questionsAndAnswers);
 };
 
-export default { brainProgression };
+export default brainProgression;

@@ -13,4 +13,4 @@ const brainEven = () => {
   }
   runGame(description, questionsAndAnswers);
 };
-export default { brainEven };
+export default brainEven;

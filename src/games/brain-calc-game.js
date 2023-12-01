@@ -34,4 +34,4 @@ const brainCalc = () => {
   runGame(description, questionsAndAnswers);
 };
 
-export default { brainCalc };
+export default brainCalc;
