@@ -6,7 +6,7 @@ const brainProgression = () => {
 
   for (let i = 0; i < 3; i += 1) {
     const progFirstElem = randomToMax(20);
-    const progHiddenElem = randomToMax(10);
+    const progHiddenElem = randomToMax(9);
 
     const progression = [];
 
