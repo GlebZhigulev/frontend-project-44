@@ -1,8 +1,8 @@
-import { randomNumFromMinToMax } from "./randomizer.js";
-import runGame from "../index.js";
+import { randomNumFromMinToMax } from './randomizer.js';
+import runGame from '../index.js';
 const brainEven = () => {
-  const description =
-    'Answer "yes" if the number is even, otherwise answer "no".';
+  const description = 
+  'Answer "yes" if the number is even, otherwise answer "no".';
   const questionsAndAnswers = [];
   const max = 100;
   const min = 1;
@@ -13,4 +13,4 @@ const brainEven = () => {
   }
   runGame(description, questionsAndAnswers);
 };
-export { brainEven };
+export default { brainEven };

@@ -1,8 +1,8 @@
-import runGame from "../index.js";
-import { randomToMax } from "./randomizer.js";
+import runGame from '../index.js';
+import { randomToMax } from './randomizer.js';
 
 const brainGcd = () => {
-  const description = "Find the greatest common divisor of given numbers.";
+  const description = 'Find the greatest common divisor of given numbers.';
   const questionsAndAnswers = [];
 
   const findCdg = (num1, num2) => {
@@ -29,4 +29,4 @@ const brainGcd = () => {
   runGame(description, questionsAndAnswers);
 };
 
-export { brainGcd };
+export default { brainGcd };

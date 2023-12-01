@@ -1,9 +1,9 @@
-import { randomToMax } from "./randomizer.js";
-import runGame from "../index.js";
+import { randomToMax } from './randomizer.js';
+import runGame from '../index.js';
 
 const brainPrime = () => {
   const description =
-    'Answer "yes" if given number is prime. Otherwise answer "no".';
+'Answer "yes" if given number is prime. Otherwise answer "no".';
   const questionsAndAnswers = [];
 
   const isPrime = (number) => {
@@ -21,10 +21,10 @@ const brainPrime = () => {
   for (let i = 0; i < 3; i += 1) {
     const number = randomToMax(100);
     const question = String(number);
-    const answer = isPrime(number) ? "yes" : "no";
+    const answer = isPrime(number) ? 'yes' : 'no';
     questionsAndAnswers.push([question, answer]);
   }
   runGame(description, questionsAndAnswers);
 };
 
-export { brainPrime };
+export default { brainPrime };

@@ -1,8 +1,8 @@
-import runGame from "../index.js";
-import { randomToMax } from "./randomizer.js";
+import runGame from '../index.js';
+import { randomToMax } from './randomizer.js';
 
 const brainCalc = () => {
-  const description = "What is the result of the expression?";
+  const description = 'What is the result of the expression?';
   const questionsAndAnswers = [];
 
   for (let i = 0; i < 3; i += 1) {
@@ -34,4 +34,4 @@ const brainCalc = () => {
   runGame(description, questionsAndAnswers);
 };
 
-export { brainCalc };
+export default { brainCalc };

@@ -1,7 +1,7 @@
-import { randomToMax } from "./randomizer.js";
-import runGame from "../index.js";
+import { randomToMax } from './randomizer.js';
+import runGame from '../index.js';
 const brainProgression = () => {
-  const description = "What number is missing in the progression?";
+  const description = 'What number is missing in the progression?';
   const questionsAndAnswers = [];
 
   for (let i = 0; i < 3; i += 1) {
@@ -24,4 +24,4 @@ const brainProgression = () => {
   runGame(description, questionsAndAnswers);
 };
 
-export { brainProgression };
+export default { brainProgression };
