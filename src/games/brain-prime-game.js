@@ -2,8 +2,7 @@ import { randomToMax } from './randomizer.js';
 import runGame from '../index.js';
 
 const brainPrime = () => {
-  const description =
-'Answer "yes" if given number is prime. Otherwise answer "no".';
+  const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
   const questionsAndAnswers = [];
 
   const isPrime = (number) => {

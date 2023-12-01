@@ -1,5 +1,6 @@
 import { randomToMax } from './randomizer.js';
 import runGame from '../index.js';
+
 const brainProgression = () => {
   const description = 'What number is missing in the progression?';
   const questionsAndAnswers = [];
@@ -15,8 +16,8 @@ const brainProgression = () => {
     }
 
     const answer = String(progression[progHiddenElem]);
-    progression[progHiddenElem] = "..";
-    const question = progression.join(" ");
+    progression[progHiddenElem] = '..';
+    const question = progression.join(' ');
 
     questionsAndAnswers.push([question, answer]);
   }
