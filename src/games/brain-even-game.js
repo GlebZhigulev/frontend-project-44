@@ -1,4 +1,4 @@
-import { randomNumFromMinToMax } from './randomizer.js';
+import { getRandomNumberBetweenMinAndMax } from './randomizer.js';
 import runGame from '../index.js';
 
 const brainEven = () => {
@@ -7,7 +7,7 @@ const brainEven = () => {
   const max = 100;
   const min = 1;
   for (let i = 0; i < 3; i += 1) {
-    const randomNumber = randomNumFromMinToMax(min, max);
+    const randomNumber = getRandomNumberBetweenMinAndMax(min, max);
     const isEven = randomNumber % 2 === 0 ? 'yes' : 'no';
     questionsAndAnswers.push([String(randomNumber), isEven]);
   }

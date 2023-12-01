@@ -1,14 +1,14 @@
 import runGame from '../index.js';
-import { randomToMax } from './randomizer.js';
+import { getRandomNumberUpToMax } from './randomizer.js';
 
 const brainCalc = () => {
   const description = 'What is the result of the expression?';
   const questionsAndAnswers = [];
 
   for (let i = 0; i < 3; i += 1) {
-    const firstNum = randomToMax(100);
-    const secondNum = randomToMax(100);
-    const randomNumber = randomToMax(3);
+    const firstNum = getRandomNumberUpToMax(100);
+    const secondNum = getRandomNumberUpToMax(100);
+    const randomNumber = getRandomNumberUpToMax(3);
     let question;
     let answer;
 

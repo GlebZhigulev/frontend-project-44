@@ -1,4 +1,4 @@
-import { randomToMax } from './randomizer.js';
+import { getRandomNumberUpToMax, getRandomNumberBetweenMinAndMax } from './randomizer.js';
 import runGame from '../index.js';
 
 const brainProgression = () => {
@@ -6,8 +6,8 @@ const brainProgression = () => {
   const questionsAndAnswers = [];
 
   for (let i = 0; i < 3; i += 1) {
-    const progFirstElem = randomToMax(20);
-    const progHiddenElem = randomToMax(9);
+    const progFirstElem = getRandomNumberUpToMax(20);
+    const progHiddenElem = getRandomNumberBetweenMinAndMax(0, 9);
 
     const progression = [];
 

@@ -1,5 +1,5 @@
 import runGame from '../index.js';
-import { randomToMax } from './randomizer.js';
+import { getRandomNumberUpToMax } from './randomizer.js';
 
 const brainGcd = () => {
   const description = 'Find the greatest common divisor of given numbers.';
@@ -17,8 +17,8 @@ const brainGcd = () => {
   };
 
   for (let i = 0; i < 3; i += 1) {
-    const firstNum = randomToMax(100);
-    const secondNum = randomToMax(100);
+    const firstNum = getRandomNumberUpToMax(100);
+    const secondNum = getRandomNumberUpToMax(100);
 
     const question = `${firstNum} ${secondNum}`;
     const answer = String(findCdg(firstNum, secondNum));

@@ -1,4 +1,4 @@
-import { randomToMax } from './randomizer.js';
+import { getRandomNumberUpToMax } from './randomizer.js';
 import runGame from '../index.js';
 
 const brainPrime = () => {
@@ -18,7 +18,7 @@ const brainPrime = () => {
   };
 
   for (let i = 0; i < 3; i += 1) {
-    const number = randomToMax(100);
+    const number = getRandomNumberUpToMax(100);
     const question = String(number);
     const answer = isPrime(number) ? 'yes' : 'no';
     questionsAndAnswers.push([question, answer]);
